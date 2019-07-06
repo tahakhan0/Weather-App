@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Weather App</title>
+	<link href="https://fonts.googleapis.com/css?family=DM+Sans&display=swap" rel="stylesheet">
+<style type="text/css">
+	body{
+		height:100%;
+		}
+	input{
+		text-align: center;
+		font-family: 'DM Sans', sans-serif;
+	}
+	.topnav{
+		margin:auto;
+		width: 50%;
+		margin-top: 20%; 
+		padding-top: 10px;
+		padding-bottom: 15px;
+		}
+	input[type= string]{
+		font-size: 21px;
+		width: 100%;
+		margin-bottom: 15px;
+	}
+	button[type=submit]{
+		font-size: 15px;
+		font-family: 'DM Sans', sans-serif;
+		margin-left: 50%;
+		border: 0.25px solid grey;
+	}
+	.ansnav{
+		text-align: center;
+		font-size: 24px;
+		font-family: 'DM Sans', sans-serif;
+	}
+</style>
+
+</head>
+<body>
+	<div class="topnav">
+	<form class="search" action = "{{ url_for('results') }}" method = "POST">
+		<p><input type="string" name="City" placeholder="Enter your city or zipcode">
+		<button type= "submit">Search</button></p>
+	</form> 
+	<div class="ansnav">
+		<p1>{{city_}} </p1>
+		<p2>&nbsp {{current_temperature}}</p2>
+	</div>
+</body>
+</html>
