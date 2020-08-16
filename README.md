@@ -1,2 +1,3 @@
 # Weather-app
-This is a basic weather app created using python's framework known as Flask. Openweather api is used as the primary weather service provider. 
+This is a simple weather app created using python's Flask framework. Openweather api is used as the primary weather service provider. 
+Link to the application: https://weatherapplicationn.herokuapp.com/results
